@@ -1,0 +1,31 @@
+# encryption is not implemenTed yet
+# as it will cause problems to find 
+# a row by using encrypTed data
+
+# passwords are hashed with bcrypt
+# bcrypt rounds is automatically choosen by the hardware speed
+# faster hardware means bigger round number
+# the minimum is 14
+# the limit is 4 seconds rounds
+# when 14 is longer than 3 sec, it will still use it
+
+# the file with your custom type
+dest: "./users"
+file: "user.go"
+
+# database connection url
+database: ""
+logging: false
+gofmt: true
+debug: false # sql
+api: "echo" # for now, only "echo" is available
+
+# disables email activation after sign up
+activation: false
+
+smtp:
+  host: "localhost"
+  port: 1234
+  user: "wat"
+  pass: "ye"
+  from: "noreply@mycompany.com"

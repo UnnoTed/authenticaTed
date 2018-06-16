@@ -1,0 +1,6 @@
+cd ..
+go install
+cd _example
+rm -rf ./secret/
+rm -rf ./users/
+authenticaTed

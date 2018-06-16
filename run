@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source ./vars
+go install
+cd ./_example/
+./run
+cd ..

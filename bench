@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd auth
+go test -bench=. -benchmem > BENCH.md
+cd ..
